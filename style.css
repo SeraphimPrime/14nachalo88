@@ -1,0 +1,75 @@
+div{
+  border: 1px solid black;
+}
+@keyframes color_change{
+  0%{ background-color: red;}
+  25%{ background-color: rgb(255, 196, 0);}
+  50%{ background-color: rgb(225, 0, 255);}
+  75%{ background-color: rgb(255, 196, 0);}
+  100%{ background-color: red;}
+}
+.box{
+  animation: color_change 7s linear 1s infinite normal;
+  height: 200px;
+  width: 200px;
+}
+.box:hover{
+  transition: all 40s linear;
+  transform: rotate(10000deg);
+}
+@keyframes поворот{
+  0%{rotate: 0deg;}
+  100%{rotate: 360deg;}
+}
+.box2{
+  animation: поворот 7s linear infinite normal;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  bottom: 180px; left: 40px;
+}
+@keyframes размер{
+  0%{scale: 1;}
+  100%{scale: 1000;}
+}
+.box3{
+  animation: размер 10000s linear infinite normal;
+  height: 100px;
+  width: 100px;
+  margin-left: 850px;
+  background-color: black;
+}
+@keyframes чел{
+  0%{transform:translateX(0px)}
+  33%{transform:translateX(2500px)}
+  99%{transform:translateX(2500px)}
+  100%{transform:translateX(-0px)}
+}
+.box4{
+  animation: чел 10s linear infinite normal;
+  height: 300px;
+  width: 300px;
+  border: none;
+  margin-left: -400px;
+}
+.box4 img{
+  height: 300px;
+  width: 300px;
+}
+
+@keyframes шримп{
+  0%{transform:translateX(0px) translate(0px)}
+  25%{transform:translateX(1000px) translateY(0px)}
+  50%{transform:translateY(720px) translateX(1000px)}
+  75%{transform:translateX(0px) translateY(720px)}
+  100%{transform:translateY(0px) translateX(0px)}
+}
+.fon{
+  width: 1500px;
+  height: 1000px;
+}
+.shrimp{
+  animation: шримп 10s linear infinite normal;
+  height: 280px;
+  width: 498px;
+}
